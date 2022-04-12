@@ -10,7 +10,9 @@ namespace Management.Models
         public int GroupNo;
         public bool Type;
 
-        public Student(string fullName,int groupNo,bool type)
+        public static List<Student> AllStudents = new List<Student>() { };
+
+        public Student(string fullName,bool type)
         {
             
             if(fullName == null || fullName== "")
@@ -22,14 +24,7 @@ namespace Management.Models
                 FullName = fullName;
             }
 
-            if(groupNo == 0)
-            {
-                throw new NullReferenceException("Grup nomresini bos qoya bilmezsen");
-            }
-            else
-            {
-                GroupNo = groupNo;
-            }
+            
 
             Type = type;
 
@@ -39,7 +34,7 @@ namespace Management.Models
         public override string ToString()
         {
             var typeO = Type ? "Zemanetli" : "Zemanetsiz";
-            return $"Name:{FullName}\nGroupNo: {GroupNo}Type: {typeO}";
+            return $"Name:{FullName}\nGroupNo: {GroupNo}\nType: {typeO}";
         }
     }
 }

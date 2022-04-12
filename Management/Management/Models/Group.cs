@@ -10,13 +10,13 @@ namespace Management.Models
         public Category Category;
         public bool isOnline;
         public int Limit;
-        public List<Student> students;
-        public List<Group> groups;
+        public static List<Student> students;
+        public static List<Group> groups = new List<Group>() { };
         private static int Bp = 100;
         private static int Bn = 100;
         private static int Dn = 100;
 
-        public Group(Category categories,bool online,int limit)
+        public Group(Category categories,bool online)
         {
             switch (categories)
             {   
@@ -35,16 +35,16 @@ namespace Management.Models
             }
             Category = categories;
 
-            if (online != true || online != false)
-            {
-                throw new Exception("Duzgun cavab daxil edin (True/False)");
-            }
-            else
+            if (online == true || online == false)
             {
                 isOnline = online;
             }
+            else
+            {
+                throw new Exception("Duzgun cavab daxil edin (True/False)");
+            }
 
-            if(online == true)
+            if (online == true)
             {
                 Limit = 15;
                 students = new List<Student>(Limit);
@@ -55,26 +55,39 @@ namespace Management.Models
                 students = new List<Student>(Limit);
             }
 
-            Group temp = new Group(categories,online,limit);
-            groups.Add(temp);
+            
         }
 
 
-        public void AddStudent(Student student)
+        //public void AddStudent(Student student)
+        //{
+
+        //    if(students.Count <= Limit)
+        //    {
+        //        students.Add(student);
+        //    }
+        //}
+
+        public override string ToString()
         {
-            if(students.Count <= Limit)
+            var onlineO = isOnline ? "Online" : "Offline";
+            string catO;
+            if(Category == Category.Programming)
             {
-                students.Add(student);
+                catO = "Programming";
             }
+            else if(Category == Category.Design)
+            {
+                catO = "Design";
+            }
+            else
+            {
+                catO = "System";
+            }
+            return $"Adi:{No}\nCategory: {catO}\nOnline Status: {onlineO}\n";
         }
 
-        public void ShowGroups()
-        {
-            foreach (var item in groups)
-            {
-                Console.WriteLine($"GroupName: {item.No}, Group Catagory: {item.Category}, Online Status: {item.isOnline}\n");
-            }   
-        }
+        
 
     }
 }
