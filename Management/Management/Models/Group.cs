@@ -10,11 +10,12 @@ namespace Management.Models
         public Category Category;
         public bool isOnline;
         public int Limit;
-        public static List<Student> students;
+        public List<Student> students;
         public static List<Group> groups = new List<Group>() { };
-        private static int Bp = 100;
-        private static int Bn = 100;
-        private static int Dn = 100;
+
+        private static int Bp = 200;
+        private static int Bn = 200;
+        private static int Dn = 200;
 
         public Group(Category categories,bool online)
         {
@@ -30,8 +31,8 @@ namespace Management.Models
                     No = $"DN{Dn++}";
                     break;
                 default:
-                    throw new Exception("Bele bir qrup adi yoxdur");
-                    break;
+                    Console.WriteLine("Bele bir qrup adi yoxdur");
+                    return;
             }
             Category = categories;
 
@@ -41,7 +42,8 @@ namespace Management.Models
             }
             else
             {
-                throw new Exception("Duzgun cavab daxil edin (True/False)");
+                Console.WriteLine("Duzgun cavab daxil edin (True/False)");
+                return;
             }
 
             if (online == true)
@@ -59,14 +61,28 @@ namespace Management.Models
         }
 
 
-        //public void AddStudent(Student student)
-        //{
+        public void AddStudent(Student student)
+        {
 
-        //    if(students.Count <= Limit)
-        //    {
-        //        students.Add(student);
-        //    }
-        //}
+            if (students.Count < Limit)
+            {
+                students.Add(student);
+            }
+            else
+            {
+                Console.WriteLine("Student sayi limiti asir!");
+                return;
+            }
+            if(student.GroupNo == default)
+            {
+                student.GroupNo = No;
+            }
+            else
+            {
+                throw new Exception("Bu telebe hal-hazirda basqa bir qrupdadir");
+            }
+            
+        }
 
         public override string ToString()
         {
@@ -84,7 +100,7 @@ namespace Management.Models
             {
                 catO = "System";
             }
-            return $"Adi:{No}\nCategory: {catO}\nOnline Status: {onlineO}\n";
+            return $"\nAdi:{No}\nCategory: {catO}\nOnline Status: {onlineO}\n";
         }
 
         

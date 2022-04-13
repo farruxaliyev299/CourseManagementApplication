@@ -12,3 +12,17 @@ C:\Users\fatima\OneDrive\Masaüstü\TaskBig\Management\Management\bin\Debug\netc
 C:\Users\fatima\OneDrive\Masaüstü\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.dll
 C:\Users\fatima\OneDrive\Masaüstü\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.pdb
 C:\Users\fatima\OneDrive\Masaüstü\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.genruntimeconfig.cache
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.dll
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.pdb
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\bin\Debug\netcoreapp3.1\Management.exe
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\bin\Debug\netcoreapp3.1\Management.deps.json
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\bin\Debug\netcoreapp3.1\Management.runtimeconfig.json
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\bin\Debug\netcoreapp3.1\Management.runtimeconfig.dev.json
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\bin\Debug\netcoreapp3.1\Management.dll
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\bin\Debug\netcoreapp3.1\Management.pdb
+C:\Users\DELL\Desktop\Code Academy\MngApplication\TaskBig\Management\Management\obj\Debug\netcoreapp3.1\Management.genruntimeconfig.cache

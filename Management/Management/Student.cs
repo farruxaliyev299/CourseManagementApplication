@@ -7,8 +7,8 @@ namespace Management.Models
     class Student
     {
         public string FullName;
-        public int GroupNo;
-        public bool Type;
+        public string GroupNo;
+        public bool Type; //zemanetli,zemanetsiz
 
         public static List<Student> AllStudents = new List<Student>() { };
 
@@ -24,17 +24,14 @@ namespace Management.Models
                 FullName = fullName;
             }
 
-            
+            Type = type; 
 
-            Type = type;
-
-            
         }
 
         public override string ToString()
         {
             var typeO = Type ? "Zemanetli" : "Zemanetsiz";
-            return $"Name:{FullName}\nGroupNo: {GroupNo}\nType: {typeO}";
+            return $"\nName:{FullName}\nGroupNo: {GroupNo}\nType: {typeO}\n";
         }
     }
 }
