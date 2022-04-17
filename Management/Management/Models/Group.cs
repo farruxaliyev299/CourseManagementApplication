@@ -24,10 +24,10 @@ namespace Management.Models
                 case Category.Programming:
                     No = $"BP{Bp++}";
                     break;
-                case Category.Design:
+                case Category.SystemAdminstration:
                     No = $"BN{Bn++}";
                     break;
-                case Category.SystemAdminstration:
+                case Category.Design:
                     No = $"DN{Dn++}";
                     break;
                 default:
@@ -88,11 +88,11 @@ namespace Management.Models
         {
             var onlineO = isOnline ? "Online" : "Offline";
             string catO;
-            if(Category == Category.Programming)
+            if (Category == Category.Programming)
             {
                 catO = "Programming";
             }
-            else if(Category == Category.Design)
+            else if (Category == Category.Design)
             {
                 catO = "Design";
             }

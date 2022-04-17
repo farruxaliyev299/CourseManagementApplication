@@ -34,3 +34,9 @@ Student calss:
 
 
 Group class:
+
+- No - (P127, S334,D101 və s.) (eyni nömrə ilə birdən çox qrup ola bilməz)
+- Category - (Programming, design, system administration)
+- IsOnline - Qrup online-dirmi
+- Limit - Qrup online-dirsə limit 15, deyilsə 10 nəfər olmalıdır.
+- Students - telebeler siyahısı, qrupda olan tələbələri ifadə edir. Qrupda tələbələrin say limiti var. Online qruplarda limit 15, offline-də isə 10-dur.
